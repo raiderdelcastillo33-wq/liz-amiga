@@ -112,3 +112,79 @@ body {
   }
   .nav-links.open { display: flex; }
 }
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  padding: 28px 0;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin: 0 0 10px;
+}
+
+.hero-text p {
+  margin: 0 0 18px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  color: #111;
+}
+
+.button:hover { text-decoration: underline; }
+
+.button.outline {
+  background: #fff;
+}
+
+.hero-media .placeholder {
+  border: 1px dashed #ccc;
+  border-radius: 16px;
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+  color: #666;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 12px 0 28px;
+}
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.card h2 { margin: 0 0 8px; }
+.card p { margin: 0 0 10px; color: #444; line-height: 1.6; }
+.card a { text-decoration: none; }
+.card a:hover { text-decoration: underline; }
+
+.footer {
+  border-top: 1px solid #eee;
+  padding: 18px 0;
+  color: #555;
+}
+
+@media (max-width: 820px) {
+  .hero { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: 1fr; }
+}

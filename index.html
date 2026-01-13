@@ -1,36 +1,85 @@
-√<!doctype html>
-<html lang="es">
+<!doctype html>
+<html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Liz – Sobre mí</title>
+  <title>Liz Barthel — Artiste peintre | Œuvres, expositions & collaborations</title>
+  <meta name="description" content="Univers artistique de Liz Barthel : œuvres, parcours, actualités et collaborations. Découvrez la galerie et contactez Liz pour exposer ou créer ensemble.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header">
-  <nav class="nav container">
-    <a class="logo" href="index.html" aria-label="Accueil">Liz Barthel</a>
 
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
-      Menu
-    </button>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="index.html" aria-label="Accueil">Liz Barthel</a>
 
-    <ul id="nav-links" class="nav-links">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="services.html">Œuvres</a></li>
-      <li><a href="parcours.html">Parcours</a></li>
-      <li><a href="blog.html">Actualités</a></li>
-      <li><a href="about.html">À propos</a></li>
-      <li><a class="cta" href="contact.html">Contact & Collaborations</a></li>
-    </ul>
-  </nav>
-</header>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+        Menu
+      </button>
+
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Œuvres</a></li>
+        <li><a href="parcours.html">Parcours</a></li>
+        <li><a href="blog.html">Actualités</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a class="cta" href="contact.html">Contact & Collaborations</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main class="container">
-    <h1>PRIMERO INDEX</h1>
-    <p>Contenido en construcción.</p>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Artiste peintre — un univers entre matière, mémoire et lumière.</h1>
+        <p>
+          Découvrez une sélection d’œuvres, mon parcours et mes actualités.
+          Pour une exposition, une collaboration ou un projet artistique, je serai ravie d’échanger avec vous.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="services.html">Voir les œuvres</a>
+          <a class="button outline" href="contact.html">Me contacter</a>
+        </div>
+      </div>
+
+      <div class="hero-media" aria-label="Image mise en avant">
+        <!-- Remplacer par une vraie image plus tard -->
+        <div class="placeholder">Image principale (à ajouter)</div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Œuvres</h2>
+        <p>Une galerie structurée pour découvrir les séries, techniques et pièces marquantes.</p>
+        <a href="services.html">Explorer la galerie →</a>
+      </article>
+
+      <article class="card">
+        <h2>Parcours</h2>
+        <p>Expositions, étapes créatives et éléments clés de mon chemin artistique.</p>
+        <a href="parcours.html">Voir le parcours →</a>
+      </article>
+
+      <article class="card">
+        <h2>Actualités</h2>
+        <p>Un billet par mois : projets en cours, expositions, coulisses de création.</p>
+        <a href="blog.html">Lire les actualités →</a>
+      </article>
+    </section>
   </main>
 
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Liz Barthel — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
-</html>
+</h
+
 
