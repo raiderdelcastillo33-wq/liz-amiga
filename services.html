@@ -1,37 +1,110 @@
 <!doctype html>
-<html lang="es">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Liz – Sobre mí</title>
+  <title>Œuvres — Liz Barthel | Galerie & séries</title>
+  <meta name="description" content="Galerie d’œuvres de Liz Barthel : séries, techniques et pièces sélectionnées. Découvrez la matière, les couleurs et l’intention derrière chaque création.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header">
-  <nav class="nav container">
-    <a class="logo" href="index.html" aria-label="Accueil">Liz Barthel</a>
 
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
-      Menu
-    </button>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="index.html" aria-label="Accueil">Liz Barthel</a>
 
-    <ul id="nav-links" class="nav-links">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="services.html">Œuvres</a></li>
-      <li><a href="parcours.html">Parcours</a></li>
-      <li><a href="blog.html">Actualités</a></li>
-      <li><a href="about.html">À propos</a></li>
-      <li><a class="cta" href="contact.html">Contact & Collaborations</a></li>
-    </ul>
-  </nav>
-</header>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+        Menu
+      </button>
+
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Œuvres</a></li>
+        <li><a href="parcours.html">Parcours</a></li>
+        <li><a href="blog.html">Actualités</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a class="cta" href="contact.html">Contact & Collaborations</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main class="container">
-    <h1>Servicioss</h1>
-    <p>Contenido en construcción.</p>
+    <header class="page-head">
+      <h1>Œuvres</h1>
+      <p>
+        Une sélection d’œuvres et de séries. Cette page peut évoluer : ajouter des sections par thème,
+        technique ou période, selon les expositions.
+      </p>
+    </header>
+
+    <section class="filters" aria-label="Filtres (optionnel)">
+      <span class="chip">Toutes</span>
+      <span class="chip">Série 1</span>
+      <span class="chip">Série 2</span>
+      <span class="chip">Nouveautés</span>
+    </section>
+
+    <section class="gallery" aria-label="Galerie d’œuvres">
+      <!-- Œuvre 1 -->
+      <article class="work-card">
+        <div class="work-thumb">
+          <!-- Remplacer par une image -->
+          <div class="placeholder">Image</div>
+        </div>
+        <div class="work-body">
+          <h2>Titre de l’œuvre</h2>
+          <p class="meta">2024 · Technique · Dimensions</p>
+          <p class="desc">Courte description (1–2 phrases). Intention, matière, émotion.</p>
+          <a class="work-link" href="contact.html">Demander des informations →</a>
+        </div>
+      </article>
+
+      <!-- Œuvre 2 -->
+      <article class="work-card">
+        <div class="work-thumb">
+          <div class="placeholder">Image</div>
+        </div>
+        <div class="work-body">
+          <h2>Titre de l’œuvre</h2>
+          <p class="meta">2023 · Technique · Dimensions</p>
+          <p class="desc">Courte description (1–2 phrases). Série, inspiration, mouvement.</p>
+          <a class="work-link" href="contact.html">Demander des informations →</a>
+        </div>
+      </article>
+
+      <!-- Œuvre 3 -->
+      <article class="work-card">
+        <div class="work-thumb">
+          <div class="placeholder">Image</div>
+        </div>
+        <div class="work-body">
+          <h2>Titre de l’œuvre</h2>
+          <p class="meta">2022 · Technique · Dimensions</p>
+          <p class="desc">Courte description (1–2 phrases). Couleurs, texture, symbolique.</p>
+          <a class="work-link" href="contact.html">Demander des informations →</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="note">
+      <h2>Collaborations & expositions</h2>
+      <p>
+        Pour une exposition, une sélection d’œuvres, ou une collaboration (édition, atelier, projet),
+        contactez-moi. Je peux envoyer un portfolio PDF sur demande.
+      </p>
+      <a class="button" href="contact.html">Contact & Collaborations</a>
+    </section>
   </main>
 
-  <script src="main.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Liz Barthel — Tous droits réservés.</p>
+    </div>
+  </footer>
 
+  <script src="main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
