@@ -264,3 +264,44 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.timeline {
+  display: grid;
+  gap: 18px;
+  padding: 14px 0 24px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 16px;
+  border-left: 2px solid #eee;
+  padding-left: 14px;
+}
+
+.timeline-item .time {
+  font-weight: 700;
+  color: #111;
+}
+
+.timeline-item .content h2 {
+  margin: 0 0 6px;
+}
+
+.timeline-item .place {
+  margin: 0 0 8px;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.timeline-item p {
+  margin: 0;
+  line-height: 1.6;
+  color: #444;
+}
+
+@media (max-width: 820px) {
+  .timeline-item {
+    grid-template-columns: 1fr;
+    padding-left: 10px;
+  }
+}

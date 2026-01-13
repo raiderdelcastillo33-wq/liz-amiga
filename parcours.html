@@ -1,36 +1,99 @@
-√<!doctype html>
-<html lang="es">
+<!doctype html>
+<html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Liz – Sobre mí</title>
+  <title>Parcours — Liz Barthel | Expositions & parcours artistique</title>
+  <meta name="description" content="Parcours artistique de Liz Barthel : expositions, résidences, projets et étapes clés. Une trajectoire entre création, matière et transmission.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header">
-  <nav class="nav container">
-    <a class="logo" href="index.html" aria-label="Accueil">Liz Barthel</a>
 
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
-      Menu
-    </button>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="index.html" aria-label="Accueil">Liz Barthel</a>
 
-    <ul id="nav-links" class="nav-links">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="services.html">Œuvres</a></li>
-      <li><a href="parcours.html">Parcours</a></li>
-      <li><a href="blog.html">Actualités</a></li>
-      <li><a href="about.html">À propos</a></li>
-      <li><a class="cta" href="contact.html">Contact & Collaborations</a></li>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+        Menu
+      </button>
 
-    </ul>
-  </nav>
-</header>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Œuvres</a></li>
+        <li><a href="parcours.html">Parcours</a></li>
+        <li><a href="blog.html">Actualités</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a class="cta" href="contact.html">Contact & Collaborations</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <main class="container">
-    <h1>PRIMERO INDEX</h1>
-    <p>Contenido en construcción.</p>
+    <header class="page-head">
+      <h1>Parcours</h1>
+      <p>
+        Expositions, projets et étapes marquantes d’un chemin artistique en constante évolution.
+      </p>
+    </header>
+
+    <section class="timeline" aria-label="Chronologie du parcours artistique">
+
+      <!-- ÉTAPE -->
+      <article class="timeline-item">
+        <div class="time">2024</div>
+        <div class="content">
+          <h2>Exposition collective — Titre</h2>
+          <p class="place">Galerie / Lieu — Ville, Pays</p>
+          <p>
+            Description courte de l’exposition, thème, participation, sélection d’œuvres.
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="time">2023</div>
+        <div class="content">
+          <h2>Projet artistique / Résidence</h2>
+          <p class="place">Structure — Ville</p>
+          <p>
+            Recherche artistique, exploration de matières, travail en atelier ou collaboration.
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="time">2022</div>
+        <div class="content">
+          <h2>Exposition personnelle</h2>
+          <p class="place">Espace culturel — Ville</p>
+          <p>
+            Première exposition personnelle, série présentée et réception du public.
+          </p>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="note">
+      <h2>Dossier artistique & collaborations</h2>
+      <p>
+        Un dossier artistique détaillé (PDF) peut être envoyé sur demande.
+        Pour une exposition, une résidence ou un projet collaboratif, contactez-moi.
+      </p>
+      <a class="button" href="contact.html">Contact & Collaborations</a>
+    </section>
   </main>
 
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Liz Barthel — Tous droits réservés.</p>
+    </div>
+  </footer>
+
   <script src="main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
