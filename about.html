@@ -1,36 +1,94 @@
 <!doctype html>
-<html lang="es">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Liz – Sobre mí</title>
+  <title>À propos — Liz Barthel | Artiste peintre</title>
+  <meta name="description" content="À propos de Liz Barthel : biographie, démarche artistique, influences et vision. Informations pour presse et collaborations.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header">
-  <nav class="nav container">
-    <a class="logo" href="index.html" aria-label="Accueil">Liz Barthel</a>
 
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
-      Menu
-    </button>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="index.html" aria-label="Accueil">Liz Barthel</a>
 
-    <ul id="nav-links" class="nav-links">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="services.html">Œuvres</a></li>
-      <li><a href="parcours.html">Parcours</a></li>
-      <li><a href="blog.html">Actualités</a></li>
-      <li><a href="about.html">À propos</a></li>
-      <li><a class="cta" href="contact.html">Contact & Collaborations</a></li>
-    </ul>
-  </nav>
-</header>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+        Menu
+      </button>
+
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Œuvres</a></li>
+        <li><a href="parcours.html">Parcours</a></li>
+        <li><a href="blog.html">Actualités</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a class="cta" href="contact.html">Contact & Collaborations</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main class="container">
-    <h1>Lo lograremos</h1>
-    <p>Contenido en construcción.</p>
+    <header class="page-head">
+      <h1>À propos</h1>
+      <p>
+        Artiste peintre, une démarche ancrée dans la matière, la mémoire et la transformation.
+      </p>
+    </header>
+
+    <section class="about">
+      <div class="about-text">
+        <h2>Biographie</h2>
+        <p>
+          Liz Barthel est artiste peintre. Son travail explore la matière, la trace et le rapport
+          entre mémoire intime et formes contemporaines. À travers la peinture, elle développe
+          un langage visuel sensible, entre abstraction et résonances narratives.
+        </p>
+        <p>
+          Son parcours est marqué par des expositions, des projets artistiques et un travail
+          régulier en atelier. Chaque série s’inscrit dans une recherche évolutive, nourrie par
+          l’expérimentation et l’écoute des matériaux.
+        </p>
+
+        <h2>Démarche artistique</h2>
+        <p>
+          La peinture est envisagée comme un espace de transformation. Les couches, les textures
+          et les couleurs dialoguent avec le temps et la mémoire. Le geste est à la fois maîtrisé
+          et ouvert à l’accident.
+        </p>
+
+        <h2>Influences & thèmes</h2>
+        <ul class="themes">
+          <li>Matière et texture</li>
+          <li>Mémoire et traces</li>
+          <li>Corps et espace</li>
+          <li>Temps, silence et transformation</li>
+        </ul>
+      </div>
+
+      <aside class="about-media">
+        <div class="placeholder">Portrait / Atelier (image)</div>
+
+        <div class="press">
+          <h3>Presse & collaborations</h3>
+          <p>
+            Un dossier artistique (bio, textes, visuels HD) est disponible sur demande.
+          </p>
+          <a class="button" href="contact.html">Demander le press kit</a>
+        </div>
+      </aside>
+    </section>
   </main>
-    
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Liz Barthel — Tous droits réservés.</p>
+    </div>
+  </footer>
+
   <script src="main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
