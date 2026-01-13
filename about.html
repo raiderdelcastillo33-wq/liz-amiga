@@ -7,21 +7,24 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header class="site-header">
+  <nav class="nav container">
+    <a class="logo" href="index.html" aria-label="Accueil">Liz Barthel</a>
 
-  <!-- MENÚ -->
-  <header>
-    <nav class="nav">
-      <a href="index.html" class="logo">Liz</a>
-      <ul class="nav-links">
-        <li><a href="about.html">Sobre mí</a></li>
-        <li><a href="services.html">Servicios</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+      Menu
+    </button>
 
-  <!-- CONTENIDO -->
+    <ul id="nav-links" class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="services.html">Œuvres</a></li>
+      <li><a href="parcours.html">Parcours</a></li>
+      <li><a href="blog.html">Actualités</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a class="cta" href="contact.html">Contact & Collaborations</a></li>
+    </ul>
+  </nav>
+</header>
   <main class="container">
     <h1>Lo lograremos</h1>
     <p>Contenido en construcción.</p>
