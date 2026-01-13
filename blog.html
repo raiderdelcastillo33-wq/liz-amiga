@@ -1,36 +1,118 @@
 <!doctype html>
-<html lang="es">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Liz – Sobre mí</title>
+  <title>Actualités — Liz Barthel | Blog & nouvelles</title>
+  <meta name="description" content="Actualités de Liz Barthel : expositions, projets en cours, coulisses de création. Un billet par mois pour suivre l’évolution artistique.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="site-header">
-  <nav class="nav container">
-    <a class="logo" href="index.html" aria-label="Accueil">Liz Barthel</a>
 
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
-      Menu
-    </button>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="index.html" aria-label="Accueil">Liz Barthel</a>
 
-    <ul id="nav-links" class="nav-links">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="services.html">Œuvres</a></li>
-      <li><a href="parcours.html">Parcours</a></li>
-      <li><a href="blog.html">Actualités</a></li>
-      <li><a href="about.html">À propos</a></li>
-      <li><a class="cta" href="contact.html">Contact & Collaborations</a></li>
-    </ul>
-  </nav>
-</header>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+        Menu
+      </button>
+
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Œuvres</a></li>
+        <li><a href="parcours.html">Parcours</a></li>
+        <li><a href="blog.html">Actualités</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a class="cta" href="contact.html">Contact & Collaborations</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main class="container">
-    <h1>Notas</h1>
-    <p>Contenido en construcción.</p>
+    <header class="page-head">
+      <h1>Actualités</h1>
+      <p>
+        Un billet par mois : expositions, projets, coulisses de création et fragments d’atelier.
+      </p>
+    </header>
+
+    <section class="posts" aria-label="Liste des articles">
+      <!-- POST 1 -->
+      <article class="post-card">
+        <div class="post-thumb">
+          <div class="placeholder">Image</div>
+        </div>
+        <div class="post-body">
+          <p class="post-meta">Janvier 2026 · Exposition</p>
+          <h2>Un nouveau cycle de création : entre matière et mémoire</h2>
+          <p class="post-excerpt">
+            Quelques lignes d’introduction. Contexte, intention, ce que le lecteur va découvrir…
+          </p>
+          <a class="post-link" href="#post-1">Lire →</a>
+        </div>
+      </article>
+
+      <!-- POST 2 -->
+      <article class="post-card">
+        <div class="post-thumb">
+          <div class="placeholder">Image</div>
+        </div>
+        <div class="post-body">
+          <p class="post-meta">Décembre 2025 · Atelier</p>
+          <h2>Coulisses : textures, pigments et silence de l’atelier</h2>
+          <p class="post-excerpt">
+            Un court extrait. Le billet complet peut être ajouté plus bas sur la même page.
+          </p>
+          <a class="post-link" href="#post-2">Lire →</a>
+        </div>
+      </article>
+    </section>
+
+    <hr class="sep">
+
+    <!-- POST COMPLET 1 -->
+    <article id="post-1" class="post-full">
+      <h2>Un nouveau cycle de création : entre matière et mémoire</h2>
+      <p class="post-meta">Janvier 2026 · Exposition</p>
+      <p>
+        Contenu complet de l’article (à remplacer par le vrai texte de Liz).
+        Ici, on peut mettre 500–900 mots sans problème.
+      </p>
+      <p>
+        Ajoutez une image, une date d’exposition, un lieu, et 2–3 phrases personnelles.
+      </p>
+    </article>
+
+    <!-- POST COMPLET 2 -->
+    <article id="post-2" class="post-full">
+      <h2>Coulisses : textures, pigments et silence de l’atelier</h2>
+      <p class="post-meta">Décembre 2025 · Atelier</p>
+      <p>
+        Contenu complet de l’article. Un billet simple, humain, régulier.
+        C’est parfait pour l’IA + réseaux sociaux.
+      </p>
+    </article>
+
+    <section class="note">
+      <h2>Automatisation (mensuelle)</h2>
+      <p>
+        Chaque mois : 1 billet + 1 résumé pour Instagram/Facebook/LinkedIn.
+        Nous pouvons préparer un modèle pour publier en 10 minutes.
+      </p>
+      <a class="button" href="contact.html">Me contacter</a>
+    </section>
   </main>
 
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Liz Barthel — Tous droits réservés.</p>
+    </div>
+  </footer>
+
   <script src="main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
