@@ -1,38 +1,112 @@
 <!doctype html>
-<html lang="es">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Liz – Sobre mí</title>
+  <title>Contact & Collaborations — Liz Barthel</title>
+  <meta name="description" content="Contactez Liz Barthel pour expositions, collaborations, presse et projets artistiques. Réponse rapide par email.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="site-header">
-  <nav class="nav container">
-    <a class="logo" href="index.html" aria-label="Accueil">Liz Barthel</a>
 
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
-      Menu
-    </button>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="index.html" aria-label="Accueil">Liz Barthel</a>
 
-    <ul id="nav-links" class="nav-links">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="services.html">Œuvres</a></li>
-      <li><a href="parcours.html">Parcours</a></li>
-      <li><a href="blog.html">Actualités</a></li>
-      <li><a href="about.html">À propos</a></li>
-      <li><a class="cta" href="contact.html">Contact & Collaborations</a></li>
-    </ul>
-  </nav>
-</header>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+        Menu
+      </button>
 
-  
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Œuvres</a></li>
+        <li><a href="parcours.html">Parcours</a></li>
+        <li><a href="blog.html">Actualités</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a class="cta" href="contact.html">Contact & Collaborations</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <main class="container">
-    <h1>contactos</h1>
-    <p>Contenido en construcción.</p>
+    <header class="page-head">
+      <h1>Contact & Collaborations</h1>
+      <p>
+        Pour une exposition, une collaboration, une demande presse ou un projet artistique :
+        écrivez-moi et je vous répondrai dès que possible.
+      </p>
+    </header>
+
+    <section class="contact-grid">
+      <article class="contact-card">
+        <h2>Contact direct</h2>
+        <p class="small">
+          Email (à confirmer) :
+          <a href="mailto:lizsartistepeintre@gmail.com">lizsartistepeintre@gmail.com</a>
+        </p>
+        <p class="small">
+          Réseaux (à compléter) :
+          <br>
+          <a href="#" aria-label="Instagram">Instagram</a> ·
+          <a href="#" aria-label="Facebook">Facebook</a> ·
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </p>
+
+        <div class="note">
+          <h3>Press kit</h3>
+          <p>
+            Dossier artistique (bio, visuels HD, textes) disponible sur demande.
+          </p>
+        </div>
+      </article>
+
+      <article class="contact-card">
+        <h2>Formulaire</h2>
+        <p class="small">Ce formulaire est “local” (sans serveur). On peut l’activer ensuite via Formspree / Netlify Forms.</p>
+
+        <form class="form" onsubmit="return false;">
+          <label>
+            Nom
+            <input type="text" placeholder="Votre nom" required>
+          </label>
+
+          <label>
+            Email
+            <input type="email" placeholder="Votre email" required>
+          </label>
+
+          <label>
+            Sujet
+            <select required>
+              <option value="">Choisir…</option>
+              <option>Exposition</option>
+              <option>Collaboration</option>
+              <option>Presse</option>
+              <option>Autre</option>
+            </select>
+          </label>
+
+          <label>
+            Message
+            <textarea rows="6" placeholder="Votre message…" required></textarea>
+          </label>
+
+          <button class="button" type="submit">Envoyer (à activer)</button>
+        </form>
+      </article>
+    </section>
   </main>
 
-  
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Liz Barthel — Tous droits réservés.</p>
+    </div>
+  </footer>
+
   <script src="main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
