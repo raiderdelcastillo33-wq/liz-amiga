@@ -467,3 +467,28 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.gallery {
+  margin-top: 2rem;
+}
+
+.gallery h2 {
+  margin: 2rem 0 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.grid img:hover {
+  transform: scale(1.03);
+}
