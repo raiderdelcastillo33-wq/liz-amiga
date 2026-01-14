@@ -119,15 +119,16 @@ body {
   padding: 28px 0;
 }
 
+.hero {align-items: center;
+}
+
 .hero-text h1 {
-  font-size: 2rem;
-  margin: 0 0 10px;
+  font-size: 2.2rem;
+  line-height: 1.15;
 }
 
 .hero-text p {
-  margin: 0 0 18px;
-  line-height: 1.6;
-  color: #444;
+  max-width: 52ch;
 }
 
 .hero-actions {
@@ -169,8 +170,8 @@ body {
 
 .card {
   border: 1px solid #eee;
-  border-radius: 16px;
-  padding: 16px;
+  border-radius: 23px;
+  padding: 18px;
 }
 
 .card h2 { margin: 0 0 8px; }
@@ -477,7 +478,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: 1fr 2fr;
   gap: 1rem;
 }
 
@@ -521,4 +522,35 @@ body {
   border: none;
   color: white;
   cursor: pointer;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.work-card img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.work-info h3 {
+  margin: 6px 0 2px;
+  font-size: 1rem;
+}
+
+.work-info .meta {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.cta-link {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #111;
+}
+
+.cta-link:hover {
+  text-decoration: underline;
 }
