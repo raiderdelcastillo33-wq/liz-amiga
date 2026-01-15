@@ -554,10 +554,25 @@ body {
 .cta-link:hover {
   text-decoration: underline;
 }
+
 .hero-media img {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 12px;
   object-fit: cover;
+}
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 8px;
+}
+
+.note {
+  margin-top: 24px;
+  font-size: 0.95rem;
+  color: #555;
 }
