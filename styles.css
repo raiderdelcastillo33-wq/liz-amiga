@@ -267,14 +267,14 @@ body {
 }
 .timeline {
   display: grid;
-  gap: 18px;
+  gap: 26px;
   padding: 14px 0 24px;
 }
 
 .timeline-item {
   display: grid;
   grid-template-columns: 90px 1fr;
-  gap: 16px;
+  gap: 18px;
   border-left: 2px solid #eee;
   padding-left: 14px;
 }
@@ -553,4 +553,11 @@ body {
 
 .cta-link:hover {
   text-decoration: underline;
+}
+.hero-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
 }
