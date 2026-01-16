@@ -18,87 +18,92 @@
       </button>
 
        <ul id="nav-links" class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
         <li><a href="services.html">Obras</a></li>
         <li><a href="parcours.html">Trayectoria</a></li>
         <li><a href="blog.html">Actualidades</a></li>
         <li><a href="about.html">Sobre mi</a></li>
-        <li><a class="cta" href="contact.html">Contacto & Collaboraciones</a></li>
+        <li><a class="cta" href="contact.html">Contacto & Colaboraciones</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="container">
     <header class="page-head">
-      <h1>Œuvres</h1>
+      <h1>Obras</h1>
       <p>
-        Une sélection d’œuvres et de séries. Cette page peut évoluer : ajouter des sections par thème,
-        technique ou période, selon les expositions.
+       
       </p>
     </header>
 
     <section class="filters" aria-label="Filtres (optionnel)">
-      <span class="chip">Toutes</span>
+      <span class="chip">Todo un mundo a descubrir</span>
       <span class="chip">Série 1</span>
       <span class="chip">Série 2</span>
-      <span class="chip">Nouveautés</span>
+      <span class="chip">Serie 3</span>
+      <span class="chip">Descubrimiento</span>
     </section>
 
-    <section class="gallery" aria-label="Galerie d’œuvres">
+    <section class="gallery" aria-label="Galeria Abierta">
+      <h2>Serie 1</h2>
       <!-- Œuvre 1 -->
-        <article class="work-card">
+        <article class="gallery">
   <img src="assets/images/oeuvres/serie-2/oeuvre-17.jpg.png" alt="Titre de l’œuvre">
-  <div class="work-info">
+  <div class="grig">
     <h3>Titre de l’œuvre</h3>
     <p class="meta">2024 · Technique mixte · 80×60 cm</p>
-    <a href="contact.html" class="cta-link">Disponible · sur demande</a>
+    <a href="contact.html" class="cta-link">Disponible · La magia Del Arte</a>
   </div>
+
 </article>
-
-
+       <h2>Serie 2"</h2>
       <!-- Œuvre 2 -->
-     <article class="work-card">
+     <article class="gallery">
   <img src="assets/images/oeuvres/expos/oeuvre-04.jpg.png" alt="Titre de l’œuvre">
-  <div class="work-info">
-    <h3>Titre de l’œuvre</h3>
+  <div class="grid">
+    <h3>Titulo de la obras</h3>
     <p class="meta">2024 · Technique mixte · 80×60 cm</p>
-    <a href="contact.html" class="cta-link">Disponible · sur demande</a>
+    <a href="contact.html" class="cta-link">Disponible · No dudes en reservar</a>
   </div>
 </article>
-
-
 
       <!-- Œuvre 3 -->
-     <article class="work-card">
+     <article class="gallery">
+      <h2>Serie 3</h2>
   <img src="assets/images/oeuvres/serie-2/oeuvre-20.jpg.png" alt="Titre de l’œuvre">
-  <div class="work-info">
+  <div class="grid">
     <h3>Titre de l’œuvre</h3>
     <p class="meta">2024 · Technique mixte · 80×60 cm</p>
-    <a href="contact.html" class="cta-link">Disponible · sur demande</a>
+    <a href="contact.html" class="cta-link">Disponible · Reserve adquisiciones</a>
   </div>
 </article>
 
     </section>
 
     <section class="note">
-      <h2>Collaborations & expositions</h2>
+      <h2>Colaboraciones & Exposicionses</h2>
       <p>
-        Pour une exposition, une sélection d’œuvres, ou une collaboration (édition, atelier, projet),
-        contactez-moi. Je peux envoyer un portfolio PDF sur demande.
+      Para exposiciones, selecciones de obras o colaboraciones (edición, talleres, proyectos), puedes contactarme. Puedo enviar un portfolio en PDF bajo solicitud.
       </p>
-      <a class="button" href="contact.html">Contact & Collaborations</a>
+      <a class="button" href="contact.html">contacto & Colaboraciones</a>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>© <span id="year"></span> Liz Barthel — Tous droits réservés.</p>
+      <p>© <span id="year"></span> Liz Barthel — Todos los Derechos Rservados.</p>
     </div>
   </footer>
+  <!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" aria-label="Cerrar">×</button>
+  <img id="lightbox-img" alt="">
+</div>
 
-  <script src="main.js"></script>
+<script src="main.js"></script>
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>

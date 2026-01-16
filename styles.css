@@ -29,18 +29,26 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  padding: 8px 10px;
+  border-radius: 999px;
+  transition: background 120ms ease, opacity 120ms ease;
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  background: rgba(86, 136, 214, 0.12); /* azul suave */
 }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 24px;
+.nav-links a[aria-current="page"]{
+  background: rgba(86, 136, 214, 0.18);
+  font-weight: 700;
 }
+
+.container{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -202,26 +210,44 @@ body {
    BOTONES
 ========================= */
 
-.button{
-  display: inline-block;
-  padding: 12px 16px;
-  border-radius: 999px;
-  border: 1px solid rgba(0,0,0,0.16);
-  background: rgba(255,255,255,0.75);
-  text-decoration: none;
-  font-weight: 600;
-  color: #111;
-  transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+.button.primary{
+  background: var(--accent);
+  color: var(--accent-ink);
+  border: 1px solid var(--accent-weak);
+  box-shadow: 0 10px 24px var(--accent-weak);
+  backdrop-filter: saturate(1.1);
 }
 
-.button:hover{
+.button.primary:hover{
   transform: translateY(-1px);
-  box-shadow: 0 10px 18px rgba(0,0,0,0.10);
-  background: rgba(255,255,255,0.95);
+  box-shadow: 0 16px 36px var(--accent-weak);
+  opacity: 0.95;
 }
 
+
+/* Botón primario */
+.button.primary{
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-color: rgba(47,95,168,0.35);
+  box-shadow: 0 10px 24px rgba(47,95,168,0.18);
+}
+
+.button.primary:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 16px 36px rgba(47,95,168,0.22);
+}
+
+/* Botón secundario */
 .button.outline{
   background: transparent;
+  color: var(--text-main);
+}
+
+.button.outline:hover{
+  transform: translateY(-1px);
+  border-color: rgba(0,0,0,0.25);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.08);
 }
 
 
@@ -429,6 +455,64 @@ body {
   gap: 14px;
   padding: 12px 0 22px;
 }
+
+/* =========================
+   GALERIA (OBRAS)
+========================= */
+
+.gallery{
+  margin-top: 18px;
+}
+
+.gallery h2{
+  margin: 26px 0 12px;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+}
+
+.gallery .grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.gallery img{
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: rgba(255,255,255,0.65);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+  transition: transform 140ms ease, box-shadow 140ms ease, opacity 140ms ease;
+  cursor: zoom-in;
+}
+
+.gallery img:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.10);
+  opacity: 0.98;
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .gallery .grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .gallery img{
+    height: 240px;
+  }
+}
+
+@media (max-width: 560px){
+  .gallery .grid{
+    grid-template-columns: 1fr;
+  }
+  .gallery img{
+    height: auto;
+  }
+}
+
 
 .work-card {
   display: grid;
@@ -889,7 +973,11 @@ body {
   --bg-main: #f7f6f3;      /* blanco roto / marfil */
   --text-main: #1e1e1e;    /* texto principal */
   --text-soft: #4a4a4a;    /* texto secundario */
-  --accent: #2b2b2b;       /* botones / acentos */
+  --accent: rgba(86, 136, 214, 0.85);   /* azul claro suave */
+  --accent-weak: rgba(86, 136, 214, 0.18);
+  --accent-ink: #ffffff;
+
+  --border: rgba(0,0,0,0.12);     /* botones / acentos */
 }
 
 p {
@@ -897,4 +985,59 @@ p {
   line-height: 1.7;
 }
 
+.section-divider{
+  border-top: 1px solid rgba(0,0,0,0.08);
+  margin: 28px 0;
+}
 
+a{
+  color: inherit;
+}
+
+a:hover{
+  opacity: 0.95;
+}
+
+/* =========================
+   LIGHTBOX
+========================= */
+
+.lightbox{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.82);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 24px;
+}
+
+.lightbox.open{
+  display: flex;
+}
+
+.lightbox img{
+  max-width: 92vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  background: #111;
+}
+
+.lightbox-close{
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 28px;
+  line-height: 1;
+  background: transparent;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.lightbox-close:hover{
+  opacity: 1;
+}
