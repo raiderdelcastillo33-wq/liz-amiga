@@ -1,22 +1,43 @@
-# index
+# INDEX
+## Hero
+(Esta página evoluciona con el tiempo: por tema, técnica o etapa.Una selección de obras y series. )
 
-Una selección de obras y series. Esta página evoluciona con el tiempo: por tema, técnica o etapa.
+## Cards
+- Œuvres
+Una galería estructurada para descubrir series, técnicas y piezas.
 
-Une galerie structurée pour découvrir les séries, techniques et pièces marquantes
+- Parcours
+Una galería estructurada para descubrir series, técnicas y piezas
 
-EUne galerie structurée pour découvrir les séries, techniques et pièces.
+- Actualités
+ entrada al mes: proyectos en curso, exposiciones y el detrás de escena de la creación
 
-Un billet par mois : projets en cours, expositions, coulisses de création.
+- Expositions
+Información sobre exposiciones pasadas y futuras
 
-Informations sur les expositions passées et à venir.
+## Botones
+- Entrar en las obras
+- Contacto y colaboraciones
 
-Pour une sélection d’œuvres, une exposition, ou une acquisition, je peux partager un portfolio PDF et des visuels HD sur demande.
+# PARCOURS
+- Texto introductorio
+Recorrido artístico de Liz Barthel: exposiciones, residencias, proyectos y etapas clave.
+Una trayectoria entre creación, materia y transmisión.
 
+- Desarrollo
+Un recorrido por etapas, exposiciones y procesos creativos.
 
-Me contacter
+- Texto final
+Este recorrido forma parte de un proceso en evolución.
+    Para exposiciones, colaboraciones o información adicional,
+    puedes ponerte en contacto conmigo.
 
-iz Barthel — Tous droits réservés
+# CONTACT
+- Frase humana
+Para exposiciones, colaboraciones, prensa o adquisiciones de obra,
+  puedes escribirme directamente. Respondo personalmente a cada solicitud.
 
-Expositions · Collaborations · Vente
+- CTA
+Para una exposición, una residencia o un proyecto colaborativo, contáctame
 
-Œuvres
+Para colaboraciones o dossier, visita la sección “Contacto
